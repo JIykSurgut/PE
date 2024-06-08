@@ -165,7 +165,7 @@ typedef struct _IMAGE_OPTIONAL_HEADER {
 
 
 <details>
-  <summary><b>struct _IMAGE_OPTIONAL_HEADER</b></summary>
+  <summary><b>struct IMAGE_SECTION_HEADER</b></summary>
   
   ``` C++
 typedef struct _IMAGE_SECTION_HEADER {
