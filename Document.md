@@ -91,9 +91,64 @@ typedef struct _IMAGE_FILE_HEADER {
 |06|0x00    |SizeOfOptionalHeader |2   | размер заголовка IMAGE_OPTIONAL_HEADER, следующего за IMAGE_FILE_HEADER.                       |
 |07|0x00    |Characteristics      |2   | флаги, описывающие характеристики файла, например, если файл является исполняемым (exe) или библиотекой (dll), поддерживает ли он 32-битный или 64-битный режим и т.д.|
 
+<details>
+  <summary><b>struct _IMAGE_OPTIONAL_HEADER</b></summary>
+  
+  ``` C++
+typedef struct _IMAGE_OPTIONAL_HEADER {
+    WORD    Magic;
+    BYTE    MajorLinkerVersion;
+    BYTE    MinorLinkerVersion;
+    DWORD   SizeOfCode;
+    DWORD   SizeOfInitializedData;
+    DWORD   SizeOfUninitializedData;
+    DWORD   AddressOfEntryPoint;
+    DWORD   BaseOfCode;
+    DWORD   BaseOfData;
+    DWORD   ImageBase;
+    DWORD   SectionAlignment;
+    DWORD   FileAlignment;
+    WORD    MajorOperatingSystemVersion;
+    WORD    MinorOperatingSystemVersion;
+    WORD    MajorImageVersion;
+    WORD    MinorImageVersion;
+    WORD    MajorSubsystemVersion;
+    WORD    MinorSubsystemVersion;
+    DWORD   Win32VersionValue;
+    DWORD   SizeOfImage;
+    DWORD   SizeOfHeaders;
+    DWORD   CheckSum;
+    WORD    Subsystem;
+    WORD    DllCharacteristics;
+    DWORD   SizeOfStackReserve;
+    DWORD   SizeOfStackCommit;
+    DWORD   SizeOfHeapReserve;
+    DWORD   SizeOfHeapCommit;
+    DWORD   LoaderFlags;
+    DWORD   NumberOfRvaAndSizes;
+    IMAGE_DATA_DIRECTORY DataDirectory[IMAGE_NUMBEROF_DIRECTORY_ENTRIES];
+} IMAGE_OPTIONAL_HEADER, *PIMAGE_OPTIONAL_HEADER;
+```
+</details>
 
-
-
+| №|Смещение|Название             |Байт|Описание                                                                |
+|--|--------|---------------------|----|------------------------------------------------------------------------|
+|01|0x00    |Magic                |2   | магическое число, определяющее формат файла (например, PE32 или PE32+).|
+|01|0x00    |MajorLinkerVersion   |1   | версия линкера, использованного для создания файла.                    |
+|01|0x00    |MinorLinkerVersion   |1   | версия линкера, использованного для создания файла.                    |
+|01|0x00    |SizeOfCode           |1   | размер кода в файле.                                                   |
+|01|0x00    |AddressOfEntryPoint  |1   | точка входа исполняемого кода.                                         |
+|01|0x00    |ImageBase            |1   | предпочтительный адрес загрузки в памяти.                              |
+|01|0x00    |SectionAlignment     |1   | выравнивание секций в памяти.                                          |
+|01|0x00    |FileAlignment        |1   | выравнивание секций в файле.                                           |
+|01|0x00    |Subsystem            |1   | подсистема, для которой предназначен файл (например, Windows GUI или консоль).|
+|01|0x00    |DllCharacteristics   |1   | флаги, специфичные для DLL.|
+|01|0x00    |SizeOfStackReserve   |1   | размер резервирования и фактического выделения стека.|
+|01|0x00    |SizeOfStackCommit    |1   | размер резервирования и фактического выделения стека.|
+|01|0x00    |SizeOfHeapReserve    |1   | размер резервирования и фактического выделения кучи. |
+|01|0x00    |SizeOfHeapCommit     |1   | размер резервирования и фактического выделения кучи. |
+|01|0x00    |NumberOfRvaAndSizes  |1   | количество каталогов данных. |
+|01|0x00    |DataDirectory        |1   | массив структур IMAGE_DATA_DIRECTORY, каждая из которых описывает каталог данных, такой как таблицы импорта и экспорта. |
 
 
 
