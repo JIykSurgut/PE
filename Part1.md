@@ -41,8 +41,33 @@
 |0x015c|SizeOfOptionalHeader|f0 00      |00 f0      |размер заголовка IMAGE_OPTIONAL_HEADER, следующего за IMAGE_FILE_HEADER (240 байт)|
 |0x015e|Characteristics     |22 00      |00 22      |флаги, описывающие характеристики файла (34)                           |
 |      |                    |           |           |                                                                       |
-
-
-
-
-
+|0x1600|Magic               |0b 02      |02 0b      |магическое число, определяющее формат файла (например, PE32 или PE32+) |
+|0x1602|MajorLinkerVersion  |0e         |0e         |версия линкера, использованного для создания файла                     |
+|0x1603|MinorLinkerVersion  |00         |00         |версия линкера, использованного для создания файла                     |
+|0x1604|SizeOfCode          |00 b4 с6 00|00 c6 b4 00|размер кода в файле 13 022 208 байт                                    |
+|0x1608|SizeOfInitializedData |00 5e 72 01|01 72 5e 00| 24 272 384 байт                                                     |
+|0x160с|SizeOfUninitializedData |00 00 00 00|00 00 00 00| 0 байт                                                            |
+|0x1700|AddressOfEntryPoint |e0 3d 48 00|00 48 3d e0| точка входа исполняемого кода                                         |
+|0x1704|BaseOfCode          |00 10 00 00|00 00 10 00|                                                                       |
+|0x1708|ImageBase           |00 00 00 40 01 00 00 00|00 00 00 01 40 00 00 00|  предпочтительный адрес загрузки в памяти     |
+|0x1800|SectionAlignment    |00 10 00 00|00 00 10 00|выравнивание секций в памяти                                           |
+|0x1804|FileAlignment       |00 02 00 00|00 00 02 00|выравнивание секций в файле                                            |
+|0x1808|MajorOperatingSystemVersion |06 00|00 06    |                                                                       |
+|0x180a|MinorOperatingSystemVersion |00 00|00 00    |                                                                       |
+|0x180c|MajorImageVersion   |00 00      |00 00      |                                                                       |
+|0x180e|MinorImageVersion   |00 00      |00 00      |                                                                       |
+|0x1900|MajorSubsystemVersion   |06 00|00 06        |                                                                        |
+|0x1902|MinorSubsystemVersion   |00 00|00 00        |                                                                        |
+|0x1904|Win32VersionValue       |00 00 00 00|00 00 00 00|                                                                        |
+|0x1908|SizeOfImage             |00 60 39 02|02 39 60 00|                                                                        |
+|0x190c|SizeOfHeaders           |00 04 00 00|00 00 04 00|                                                                        |
+|0x1a00|CheckSum                |11 af 09 01|01 09 af 11|                                                                  |
+|0x1a04|Subsystem               |02 00|00 02| подсистема, для которой предназначен файл                                  |
+|0x1a06|DllCharacteristics      |60 c1|c1 60| флаги, специфичные для DLL.                                 |
+|0x1a08|SizeOfStackReserve      |00 00 20 00 00 00 00 00|00 00 00 00 00 20 00 00|                                |
+|0x1b00|SizeOfStackCommit       |00 10 00 00 00 00 00 00|00 00 00 00 00 00 10 00|                                |
+|0x1b08|SizeOfHeapReserve       |00 00 10 00 00 00 00 00|00 00 00 00 00 10 00 00|                                |
+|0x1c00|SizeOfHeapCommit        |00 10 00 00 00 00 00 00|00 00 00 00 00 00 10 00|                                |
+|0x1c08|LoaderFlags             |00 00 00 00|00 00 00 00|                                |
+|0x01cc|NumberOfRvaAndSizes     |10 00 00 00|00 00 00 10|                                |
+|0x01d0|DataDirectory           |10 00 00 00|00 00 00 10|                                |
