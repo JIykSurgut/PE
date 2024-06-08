@@ -70,4 +70,6 @@
 |0x1c00|SizeOfHeapCommit        |00 10 00 00 00 00 00 00|00 00 00 00 00 00 10 00|                                |
 |0x1c08|LoaderFlags             |00 00 00 00|00 00 00 00|                                |
 |0x01cc|NumberOfRvaAndSizes     |10 00 00 00|00 00 00 10|                                |
-|0x01d0|DataDirectory           |10 00 00 00|00 00 00 10|                                |
+|      |          |           |           |                                |
+|0x01d0|IMAGE_DIRECTORY_ENTRY_EXPORT|20d5eb00 dc060000|          |VirtualAddress=00ebd529 Size=000006dc |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_IMPORT|fcdbeb00 1c020000|          |VirtualAddress=00ebdbfc Size=0000021c |
