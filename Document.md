@@ -85,7 +85,7 @@ typedef struct _IMAGE_FILE_HEADER {
     WORD    Characteristics;
 } IMAGE_FILE_HEADER, *PIMAGE_FILE_HEADER;
 
-typedef struct _IMAGE_OPTIONAL_HEADER {
+typedef struct _IMAGE_OPTIONAL_HEADER64 {
     WORD                 Magic;
     BYTE                 MajorLinkerVersion;
     BYTE                 MinorLinkerVersion;
