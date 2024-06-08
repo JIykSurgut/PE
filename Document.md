@@ -164,4 +164,38 @@ typedef struct _IMAGE_OPTIONAL_HEADER {
 |08|.reloc |Содержит информацию для базовой переадресации, необходимую, если файл не загружается по предпочтительному адресу |
 
 
+<details>
+  <summary><b>struct _IMAGE_OPTIONAL_HEADER</b></summary>
+  
+  ``` C++
+typedef struct _IMAGE_SECTION_HEADER {
+    BYTE    Name[IMAGE_SIZEOF_SHORT_NAME];
+    union {
+        DWORD   PhysicalAddress;
+        DWORD   VirtualSize;
+    } Misc;
+    DWORD   VirtualAddress;
+    DWORD   SizeOfRawData;
+    DWORD   PointerToRawData;
+    DWORD   PointerToRelocations;
+    DWORD   PointerToLinenumbers;
+    WORD    NumberOfRelocations;
+    WORD    NumberOfLinenumbers;
+    DWORD   Characteristics;
+} IMAGE_SECTION_HEADER, *PIMAGE_SECTION_HEADER;
+```
+</details>
+
+| №|Смещение|Название             |Байт|Описание                                                                |
+|--|--------|---------------------|----|------------------------------------------------------------------------|
+|01|0x00    |Name                |2   | имя секции.|
+|01|0x00    |Misc.VirtualSize    |2   | размер секции в памяти.|
+|01|0x00    |VirtualAddress      |2   | виртуальный адрес секции в памяти.|
+|01|0x00    |SizeOfRawData       |2   | размер секции в файле.|
+|01|0x00    |PointerToRawData    |2   |  указатель на начало данных секции в файле.|
+|01|0x00    |Characteristics     |2   |  флаги, определяющие атрибуты секции, такие как доступность для чтения, записи и выполнения.|
+
+
+
+
 
