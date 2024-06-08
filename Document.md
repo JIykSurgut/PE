@@ -95,6 +95,13 @@ typedef struct _IMAGE_FILE_HEADER {
   <summary><b>struct _IMAGE_OPTIONAL_HEADER</b></summary>
   
   ``` C++
+typedef struct _IMAGE_NT_HEADERS64 {
+    DWORD Signature;
+    IMAGE_FILE_HEADER FileHeader;
+    IMAGE_OPTIONAL_HEADER64 OptionalHeader;
+} IMAGE_NT_HEADERS64;
+
+
 typedef struct _IMAGE_OPTIONAL_HEADER {
     WORD    Magic;
     BYTE    MajorLinkerVersion;
