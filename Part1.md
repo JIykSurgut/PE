@@ -29,47 +29,47 @@
 |0x01 47 |
 
 ## PE заголовок
-|offset |                   |           |                                                                       |
-|-------|----------------------|--------|-----------------------------------------------------------------------|
-|0x0148|Signature              |00004550|Сигнатура                                                              |
-|      |                       |        |                                                                       |
-|0x014c|Machine                |8668    |указывает тип машины                                                   |
-|0x014e|NumberOfSections       |0007    |количество секций в файле                                              |
-|0x0150|TimeDateStamp          |65bce66a|временная метка создания файла                                         |
-|0x0154|PointerToSymbolTable   |00000000|указатель на таблицу символов для отладки                              |
-|0x0158|NumberOfSymbols        |00000000|количество символов в таблице символов                                 |
-|0x015c|SizeOfOptionalHeader   |00f0    |размер заголовка IMAGE_OPTIONAL_HEADER, следующего за IMAGE_FILE_HEADER (240 байт)|
-|0x015e|Characteristics        |0022    |флаги, описывающие характеристики файла (34)                           |
-|      |                       |        |                                                                       |
-|0x1600|Magic                  |020b    |магическое число, определяющее формат файла (например, PE32 или PE32+) |
-|0x1602|MajorLinkerVersion     |0e      |версия линкера, использованного для создания файла                     |
-|0x1603|MinorLinkerVersion     |00      |версия линкера, использованного для создания файла                     |
-|0x1604|SizeOfCode             |00c6b400|размер кода в файле 13 022 208 байт                                    |
-|0x1608|SizeOfInitializedData  |01725e00| 24 272 384 байт                                                     |
-|0x160с|SizeOfUninitializedData|00000000| 0 байт                                                            |
-|0x1700|AddressOfEntryPoint    |00483de0| точка входа исполняемого кода                                         |
-|0x1704|BaseOfCode             |00001000|                                                                       |
-|0x1708|ImageBase              |00000001 40000000|  предпочтительный адрес загрузки в памяти     |
-|0x1800|SectionAlignment       |00001000|выравнивание секций в памяти                                           |
-|0x1804|FileAlignment          |00000200|выравнивание секций в файле                                            |
-|0x1808|MajorOperatingSystemVersion|0006    |                                                                       |
-|0x180a|MinorOperatingSystemVersion|0000    |                                                                       |
-|0x180c|MajorImageVersion   |0000      |                                                                       |
-|0x180e|MinorImageVersion   |0000      |                                                                       |
-|0x1900|MajorSubsystemVersion   |0006        |                                                                        |
-|0x1902|MinorSubsystemVersion   |0000        |                                                                        |
-|0x1904|Win32VersionValue       |00000000|                                                                        |
-|0x1908|SizeOfImage             |02396000|                                                                        |
-|0x190c|SizeOfHeaders           |00000400|                                                                        |
-|0x1a00|CheckSum                |0109af11|                                                                  |
-|0x1a04|Subsystem               |0002| подсистема, для которой предназначен файл                                  |
-|0x1a06|DllCharacteristics      |c160| флаги, специфичные для DLL.                                 |
-|0x1a08|SizeOfStackReserve      |00000000 00200000|                                |
-|0x1b00|SizeOfStackCommit       |00000000 00001000|                                |
-|0x1b08|SizeOfHeapReserve       |00000000 00100000|                                |
-|0x1c00|SizeOfHeapCommit        |00000000 00001000|                                |
-|0x1c08|LoaderFlags             |00000000|                                |
-|0x01cc|NumberOfRvaAndSizes     |00000010|                                |
-|      |          |           |           |                                |
-|0x01d0|IMAGE_DIRECTORY_ENTRY_EXPORT|20d5eb00 dc060000|          |VirtualAddress=00ebd529 Size=000006dc |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_IMPORT|fcdbeb00 1c020000|          |VirtualAddress=00ebdbfc Size=0000021c |
+|offset |                           |                 |                                                                       |
+|-------|---------------------------|-----------------|-----------------------------------------------------------------------|
+|0x0148|Signature                   |00004550         |Сигнатура                                                              |
+|      |                            |                 |                                                                       |
+|0x014c|Machine                     |8668             |указывает тип машины                                                   |
+|0x014e|NumberOfSections            |0007             |количество секций в файле                                              |
+|0x0150|TimeDateStamp               |65bce66a         |временная метка создания файла                                         |
+|0x0154|PointerToSymbolTable        |00000000         |указатель на таблицу символов для отладки                              |
+|0x0158|NumberOfSymbols             |00000000         |количество символов в таблице символов                                 |
+|0x015c|SizeOfOptionalHeader        |00f0             |размер заголовка IMAGE_OPTIONAL_HEADER, следующего за IMAGE_FILE_HEADER (240 байт)|
+|0x015e|Characteristics             |0022             |флаги, описывающие характеристики файла (34)                           |
+|      |                            |                 |                                                                       |
+|0x0160|Magic                       |020b             |магическое число, определяющее формат файла (например, PE32 или PE32+) |
+|0x0162|MajorLinkerVersion          |0e               |версия линкера, использованного для создания файла                     |
+|0x0163|MinorLinkerVersion          |00               |версия линкера, использованного для создания файла                     |
+|0x0164|SizeOfCode                  |00c6b400         |размер кода в файле 13 022 208 байт                                    |
+|0x0168|SizeOfInitializedData       |01725e00         | 24 272 384 байт                                                       |
+|0x016с|SizeOfUninitializedData     |00000000         | 0 байт                                                                |
+|0x0170|AddressOfEntryPoint         |00483de0         | точка входа исполняемого кода                                         |
+|0x0174|BaseOfCode                  |00001000         |                                                                       |
+|0x0178|ImageBase                   |00000001 40000000|предпочтительный адрес загрузки в памяти                               |
+|0x0180|SectionAlignment            |00001000         |выравнивание секций в памяти                                           |
+|0x0184|FileAlignment               |00000200         |выравнивание секций в файле                                            |
+|0x0188|MajorOperatingSystemVersion |0006             |                                                                       |
+|0x018a|MinorOperatingSystemVersion |0000             |                                                                       |
+|0x018c|MajorImageVersion           |0000             |                                                                       |
+|0x018e|MinorImageVersion           |0000             |                                                                       |
+|0x0190|MajorSubsystemVersion       |0006             |                                                                       |
+|0x0192|MinorSubsystemVersion       |0000             |                                                                       |
+|0x0194|Win32VersionValue           |00000000         |                                                                       |
+|0x0198|SizeOfImage                 |02396000         |                                                                       |
+|0x019c|SizeOfHeaders               |00000400         |                                                                       |
+|0x01a0|CheckSum                    |0109af11         |                                                                       |
+|0x01a4|Subsystem                   |0002             | подсистема, для которой предназначен файл                             |
+|0x01a6|DllCharacteristics          |c160             | флаги, специфичные для DLL.                                           |
+|0x01a8|SizeOfStackReserve          |00000000 00200000|                                                                       |
+|0x01b0|SizeOfStackCommit           |00000000 00001000|                                                                       |
+|0x01b8|SizeOfHeapReserve           |00000000 00100000|                                                                       |
+|0x01c0|SizeOfHeapCommit            |00000000 00001000|                                                                       |
+|0x01c8|LoaderFlags                 |00000000         |                                                                       |
+|0x01cc|NumberOfRvaAndSizes         |00000010         |                                                                       |
+|      |                            |                 |           |                                                           |
+|0x01d0|IMAGE_DIRECTORY_ENTRY_EXPORT|20d5eb00 dc060000|VirtualAddress=00ebd529 Size=000006dc                                  |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_IMPORT|fcdbeb00 1c020000|VirtualAddress=00ebdbfc Size=0000021c                                  |
