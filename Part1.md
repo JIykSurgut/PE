@@ -89,3 +89,94 @@
 |0x0240|IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR|00000000 00000000|VirtualAddress=00000000 Size=00000000                          |
 |0x0248|                                    |00000000 00000000|VirtualAddress=00000000 Size=00000000                          |
 
+## Секции
+|offset|                            |                |                                                                       |
+|------|----------------------------|----------------|-----------------------------------------------------------------------|
+|0x0250|Name                        |2e74657874000000| .text                                                                 |
+|0x0258|VirtualSize                 |5cb3c600        | 00c6b35c = 13 022 044 байт                                            |
+|0x025с|VirtualAddress              |00001000        | 00001000                                                              |
+|0x0260|SizeOfRawData               |00b4c600        | 00c6b400                                                              |
+|0x0264|PointerToRawData            |00040000        | 00000400                                                              |
+|0x0268|PointerToRelocations        |00000000        |                                                                       |
+|0x026c|PointerToLinenumbers        |00000000        |                                                                       |
+|0x0270|NumberOfRelocations         |0000            |                                                                       |
+|0x0272|NumberOfLinenumbers         |0000            |                                                                       |
+|0x0274|Characteristics             |60000020        |                                                                       |
+
+|offset|                            |                |                                                                       |
+|------|----------------------------|----------------|-----------------------------------------------------------------------|
+|0x0250|Name                        |2e74657874000000| .rdata                                                                 |
+|0x0258|VirtualSize                 |5cb3c600        | 00c6b35c = 13 022 044 байт                                            |
+|0x025с|VirtualAddress              |00001000        | 00001000                                                              |
+|0x0260|SizeOfRawData               |00b4c600        | 00c6b400                                                              |
+|0x0264|PointerToRawData            |00040000        | 00000400                                                              |
+|0x0268|PointerToRelocations        |00000000        |                                                                       |
+|0x026c|PointerToLinenumbers        |00000000        |                                                                       |
+|0x0270|NumberOfRelocations         |0000            |                                                                       |
+|0x0272|NumberOfLinenumbers         |0000            |                                                                       |
+|0x0274|Characteristics             |60000020        |                                                                       |
+
+|offset|                            |                |                                                                       |
+|------|----------------------------|----------------|-----------------------------------------------------------------------|
+|0x0250|Name                        |2e74657874000000| .data                                                                 |
+|0x0258|VirtualSize                 |5cb3c600        | 00c6b35c = 13 022 044 байт                                            |
+|0x025с|VirtualAddress              |00001000        | 00001000                                                              |
+|0x0260|SizeOfRawData               |00b4c600        | 00c6b400                                                              |
+|0x0264|PointerToRawData            |00040000        | 00000400                                                              |
+|0x0268|PointerToRelocations        |00000000        |                                                                       |
+|0x026c|PointerToLinenumbers        |00000000        |                                                                       |
+|0x0270|NumberOfRelocations         |0000            |                                                                       |
+|0x0272|NumberOfLinenumbers         |0000            |                                                                       |
+|0x0274|Characteristics             |60000020        |                                                                       |
+
+|offset|                            |                |                                                                       |
+|------|----------------------------|----------------|-----------------------------------------------------------------------|
+|0x0250|Name                        |2e74657874000000| .data                                                                 |
+|0x0258|VirtualSize                 |5cb3c600        | 00c6b35c = 13 022 044 байт                                            |
+|0x025с|VirtualAddress              |00001000        | 00001000                                                              |
+|0x0260|SizeOfRawData               |00b4c600        | 00c6b400                                                              |
+|0x0264|PointerToRawData            |00040000        | 00000400                                                              |
+|0x0268|PointerToRelocations        |00000000        |                                                                       |
+|0x026c|PointerToLinenumbers        |00000000        |                                                                       |
+|0x0270|NumberOfRelocations         |0000            |                                                                       |
+|0x0272|NumberOfLinenumbers         |0000            |                                                                       |
+|0x0274|Characteristics             |60000020        |                                                                       |
+
+|offset|                            |                |                                                                       |
+|------|----------------------------|----------------|-----------------------------------------------------------------------|
+|0x0250|Name                        |2e74657874000000| .pdata                                                                |
+|0x0258|VirtualSize                 |5cb3c600        | 00c6b35c = 13 022 044 байт                                            |
+|0x025с|VirtualAddress              |00001000        | 00001000                                                              |
+|0x0260|SizeOfRawData               |00b4c600        | 00c6b400                                                              |
+|0x0264|PointerToRawData            |00040000        | 00000400                                                              |
+|0x0268|PointerToRelocations        |00000000        |                                                                       |
+|0x026c|PointerToLinenumbers        |00000000        |                                                                       |
+|0x0270|NumberOfRelocations         |0000            |                                                                       |
+|0x0272|NumberOfLinenumbers         |0000            |                                                                       |
+|0x0274|Characteristics             |60000020        |                                                                       |
+
+|offset|                            |                |                                                                       |
+|------|----------------------------|----------------|-----------------------------------------------------------------------|
+|0x0250|Name                        |2e74657874000000| .tls                                                                  |
+|0x0258|VirtualSize                 |5cb3c600        | 00c6b35c = 13 022 044 байт                                            |
+|0x025с|VirtualAddress              |00001000        | 00001000                                                              |
+|0x0260|SizeOfRawData               |00b4c600        | 00c6b400                                                              |
+|0x0264|PointerToRawData            |00040000        | 00000400                                                              |
+|0x0268|PointerToRelocations        |00000000        |                                                                       |
+|0x026c|PointerToLinenumbers        |00000000        |                                                                       |
+|0x0270|NumberOfRelocations         |0000            |                                                                       |
+|0x0272|NumberOfLinenumbers         |0000            |                                                                       |
+|0x0274|Characteristics             |60000020        |                                                                       |
+
+|offset|                            |                |                                                                       |
+|------|----------------------------|----------------|-----------------------------------------------------------------------|
+|0x0250|Name                        |2e74657874000000| .rsrc                                                                  |
+|0x0258|VirtualSize                 |5cb3c600        | 00c6b35c = 13 022 044 байт                                            |
+|0x025с|VirtualAddress              |00001000        | 00001000                                                              |
+|0x0260|SizeOfRawData               |00b4c600        | 00c6b400                                                              |
+|0x0264|PointerToRawData            |00040000        | 00000400                                                              |
+|0x0268|PointerToRelocations        |00000000        |                                                                       |
+|0x026c|PointerToLinenumbers        |00000000        |                                                                       |
+|0x0270|NumberOfRelocations         |0000            |                                                                       |
+|0x0272|NumberOfLinenumbers         |0000            |                                                                       |
+|0x0274|Characteristics             |60000020        |                                                                       |
