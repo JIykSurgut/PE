@@ -72,5 +72,20 @@
 |0x01c8|LoaderFlags                 |00000000         |                                                                       |
 |0x01cc|NumberOfRvaAndSizes         |00000010         |                                                                       |
 |      |IMAGE_DATA_DIRECTORY        |                 |                                                                       |
-|0x01d0|IMAGE_DIRECTORY_ENTRY_EXPORT|20d5eb00 dc060000|VirtualAddress=00ebd529 Size=000006dc                                  |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_IMPORT|fcdbeb00 1c020000|VirtualAddress=00ebdbfc Size=0000021c                                  |
+|0x01d0|IMAGE_DIRECTORY_ENTRY_EXPORT        |00ebd520 000006dc|VirtualAddress=00ebd520 Size=000006dc                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_IMPORT        |00ebdbfc 0000021c|VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_RESOURCE      |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_EXCEPTION     |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_SECURITY      |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_BASERELOC     |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_DEBUG         |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_COPYRIGHT     |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_ARCHITECTURE  |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_GLOBALPTR     |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_TLS           |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG   |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT  |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_IAT           |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT  |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR|                 |VirtualAddress=00ebdbfc Size=0000021c                          |
+|0x01d8|                                    |                 |VirtualAddress=00000000 Size=00000000                          |
