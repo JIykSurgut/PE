@@ -29,10 +29,11 @@
 |0x01 47 |
 
 ## PE заголовок
-|offset |                           |                 |                                                                       |
-|-------|---------------------------|-----------------|-----------------------------------------------------------------------|
+|offset|                            |                 |                                                                       |
+|------|----------------------------|-----------------|-----------------------------------------------------------------------|
+|      |IMAGE_NT_HEADERS64          |                 |                                                                       | 
 |0x0148|Signature                   |00004550         |Сигнатура                                                              |
-|      |                            |                 |                                                                       |
+|      |IMAGE_FILE_HEADER           |                 |                                                                       |
 |0x014c|Machine                     |8668             |указывает тип машины                                                   |
 |0x014e|NumberOfSections            |0007             |количество секций в файле                                              |
 |0x0150|TimeDateStamp               |65bce66a         |временная метка создания файла                                         |
@@ -40,7 +41,7 @@
 |0x0158|NumberOfSymbols             |00000000         |количество символов в таблице символов                                 |
 |0x015c|SizeOfOptionalHeader        |00f0             |размер заголовка IMAGE_OPTIONAL_HEADER, следующего за IMAGE_FILE_HEADER (240 байт)|
 |0x015e|Characteristics             |0022             |флаги, описывающие характеристики файла (34)                           |
-|      |                            |                 |                                                                       |
+|      |IMAGE_OPTIONAL_HEADER64     |                 |                                                                       |
 |0x0160|Magic                       |020b             |магическое число, определяющее формат файла (например, PE32 или PE32+) |
 |0x0162|MajorLinkerVersion          |0e               |версия линкера, использованного для создания файла                     |
 |0x0163|MinorLinkerVersion          |00               |версия линкера, использованного для создания файла                     |
@@ -70,6 +71,6 @@
 |0x01c0|SizeOfHeapCommit            |00000000 00001000|                                                                       |
 |0x01c8|LoaderFlags                 |00000000         |                                                                       |
 |0x01cc|NumberOfRvaAndSizes         |00000010         |                                                                       |
-|      |                            |                 |           |                                                           |
+|      |IMAGE_DATA_DIRECTORY        |                 |                                                                       |
 |0x01d0|IMAGE_DIRECTORY_ENTRY_EXPORT|20d5eb00 dc060000|VirtualAddress=00ebd529 Size=000006dc                                  |
 |0x01d8|IMAGE_DIRECTORY_ENTRY_IMPORT|fcdbeb00 1c020000|VirtualAddress=00ebdbfc Size=0000021c                                  |
