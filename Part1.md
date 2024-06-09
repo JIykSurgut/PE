@@ -31,9 +31,9 @@
 ## PE заголовок
 |offset|                            |                 |                                                                       |
 |------|----------------------------|-----------------|-----------------------------------------------------------------------|
-|      |IMAGE_NT_HEADERS64          |                 |                                                                       | 
+|      |<b>IMAGE_NT_HEADERS64</b>   |                 |                                                                       | 
 |0x0148|Signature                   |00004550         |Сигнатура                                                              |
-|      |IMAGE_FILE_HEADER           |                 |                                                                       |
+|      |<b>IMAGE_FILE_HEADER</b>    |                 |                                                                       |
 |0x014c|Machine                     |8668             |указывает тип машины                                                   |
 |0x014e|NumberOfSections            |0007             |количество секций в файле                                              |
 |0x0150|TimeDateStamp               |65bce66a         |временная метка создания файла                                         |
@@ -41,7 +41,7 @@
 |0x0158|NumberOfSymbols             |00000000         |количество символов в таблице символов                                 |
 |0x015c|SizeOfOptionalHeader        |00f0             |размер заголовка IMAGE_OPTIONAL_HEADER, следующего за IMAGE_FILE_HEADER (240 байт)|
 |0x015e|Characteristics             |0022             |флаги, описывающие характеристики файла (34)                           |
-|      |IMAGE_OPTIONAL_HEADER64     |                 |                                                                       |
+|      |<b>IMAGE_OPTIONAL_HEADER64</b>|                 |                                                                       |
 |0x0160|Magic                       |020b             |магическое число, определяющее формат файла (например, PE32 или PE32+) |
 |0x0162|MajorLinkerVersion          |0e               |версия линкера, использованного для создания файла                     |
 |0x0163|MinorLinkerVersion          |00               |версия линкера, использованного для создания файла                     |
@@ -71,21 +71,21 @@
 |0x01c0|SizeOfHeapCommit            |00000000 00001000|                                                                       |
 |0x01c8|LoaderFlags                 |00000000         |                                                                       |
 |0x01cc|NumberOfRvaAndSizes         |00000010         |                                                                       |
-|      |IMAGE_DATA_DIRECTORY        |                 |                                                                       |
+|      |<b>IMAGE_DATA_DIRECTORY</b> |                 |                                                                       |
 |0x01d0|IMAGE_DIRECTORY_ENTRY_EXPORT        |00ebd520 000006dc|VirtualAddress=00ebd520 Size=000006dc                          |
 |0x01d8|IMAGE_DIRECTORY_ENTRY_IMPORT        |00ebdbfc 0000021c|VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_RESOURCE      |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_EXCEPTION     |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_SECURITY      |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_BASERELOC     |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_DEBUG         |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_COPYRIGHT     |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_ARCHITECTURE  |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_GLOBALPTR     |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_TLS           |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG   |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT  |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_IAT           |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT  |                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR|                 |VirtualAddress=00ebdbfc Size=0000021c                          |
-|0x01d8|                                    |                 |VirtualAddress=00000000 Size=00000000                          |
+|0x01e0|IMAGE_DIRECTORY_ENTRY_RESOURCE      |0237a000 0000a780|VirtualAddress=0237a000 Size=0000a780                          |
+|0x01e8|IMAGE_DIRECTORY_ENTRY_EXCEPTION     |022aa000 000ce52c|VirtualAddress=022aa000 Size=000ce52c                          |
+|0x01f0|IMAGE_DIRECTORY_ENTRY_SECURITY      |01089600 00002aa8|VirtualAddress=01089600 Size=00002aa8                          |
+|0x01f8|IMAGE_DIRECTORY_ENTRY_BASERELOC     |02385000 00010cf0|VirtualAddress=02385000 Size=00010cf0                          |
+|0x0200|IMAGE_DIRECTORY_ENTRY_DEBUG         |00d689e0 00000054|VirtualAddress=00d689e0 Size=00000054                          |
+|0x0208|IMAGE_DIRECTORY_ENTRY_ARCHITECTURE  |00000000 00000000|VirtualAddress=00000000 Size=00000000                          |
+|0x0210|IMAGE_DIRECTORY_ENTRY_GLOBALPTR     |00000000 00000000|VirtualAddress=00000000 Size=00000000                          |
+|0x0218|IMAGE_DIRECTORY_ENTRY_TLS           |00d68ad8 00000028|VirtualAddress=00d68ad8 Size=00000028                          |
+|0x0220|IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG   |00d68a40 00000094|VirtualAddress=00d68a40 Size=00000094                          |
+|0x0228|IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT  |00000000 00000000|VirtualAddress=00000000 Size=00000000                          |
+|0x0230|IMAGE_DIRECTORY_ENTRY_IAT           |00c6d000 000022f0|VirtualAddress=00c6d000 Size=000022f0                          |
+|0x0238|IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT  |00000000 00000000|VirtualAddress=00000000 Size=00000000                          |
+|0x0240|IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR|00000000 00000000|VirtualAddress=00000000 Size=00000000                          |
+|0x0248|                                    |00000000 00000000|VirtualAddress=00000000 Size=00000000                          |
+
