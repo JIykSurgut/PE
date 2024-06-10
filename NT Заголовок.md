@@ -148,11 +148,6 @@ typedef struct _IMAGE_OPTIONAL_HEADER64 {
     DWORD                NumberOfRvaAndSizes;
     IMAGE_DATA_DIRECTORY DataDirectory[IMAGE_NUMBEROF_DIRECTORY_ENTRIES];
 } IMAGE_OPTIONAL_HEADER64, *PIMAGE_OPTIONAL_HEADER64;
-
-typedef struct _IMAGE_DATA_DIRECTORY {
-    DWORD   VirtualAddress;
-    DWORD   Size;
-} IMAGE_DATA_DIRECTORY, *PIMAGE_DATA_DIRECTORY;
 ```
 
 | №|Смещение|Название             |Байт|Описание                                                                |
@@ -174,3 +169,10 @@ typedef struct _IMAGE_DATA_DIRECTORY {
 |01|0x00    |NumberOfRvaAndSizes  |1   | количество каталогов данных. |
 |01|0x00    |DataDirectory        |1   | массив структур IMAGE_DATA_DIRECTORY, каждая из которых описывает каталог данных, такой как таблицы импорта и экспорта. |
 
+## IMAGE_DATA_DIRECTORY
+``` C++
+typedef struct _IMAGE_DATA_DIRECTORY {
+    DWORD   VirtualAddress;
+    DWORD   Size;
+} IMAGE_DATA_DIRECTORY, *PIMAGE_DATA_DIRECTORY;
+```
