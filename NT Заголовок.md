@@ -189,7 +189,7 @@ typedef PIMAGE_OPTIONAL_HEADER32            PIMAGE_OPTIONAL_HEADER;
 <details>
   <summary><b>DataDirectory</b></summary>
 
-``` C+
+``` C++
 #define IMAGE_DIRECTORY_ENTRY_EXPORT          0   // Export Directory
 #define IMAGE_DIRECTORY_ENTRY_IMPORT          1   // Import Directory
 #define IMAGE_DIRECTORY_ENTRY_RESOURCE        2   // Resource Directory
