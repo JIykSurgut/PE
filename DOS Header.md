@@ -2,6 +2,8 @@
 Используется для поддержки совместимости DOS
 
 ``` C++
+#define IMAGE_DOS_SIGNATURE                 0x5A4D      // MZ
+
 typedef struct _IMAGE_DOS_HEADER {
     WORD e_magic;         // Магическое число
     WORD e_cblp;          // Bytes on last page of file
