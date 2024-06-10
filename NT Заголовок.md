@@ -115,6 +115,14 @@ typedef struct _IMAGE_FILE_HEADER {
 
 ## IMAGE_OPTIONAL_HEADER64
 <details>
+<summary><b>define</b></summary>
+
+``` C+
+#define IMAGE_NUMBEROF_DIRECTORY_ENTRIES    16
+```
+</details>
+
+<details>
   <summary><b>Magic</b></summary>
     
 ``` C++
